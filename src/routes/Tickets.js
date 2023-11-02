@@ -7,16 +7,14 @@ import { useState } from "react";
 import RulesAndPolicies from "../components/RulesAndPolicies";
 import ParkingAndDirection from "../components/ParkingAndDirtection";
 import { IconContext } from "react-icons/lib";
-import { IoIosTimer } from 'react-icons/io';
+import { IoIosTimer } from "react-icons/io";
 
 const Tickets = () => {
   const [opened, setOpened] = useState(false);
-  const [clickedBtn, setClickedBtn] = useState("");
 
   const handleClick = (getButtonName) => {
     const name = getButtonName;
     setOpened(!opened);
-    setClickedBtn(name);
     goAnimation(name);
   };
 
@@ -98,9 +96,9 @@ const Tickets = () => {
     <div>
       <Navbar />
       <section>
-        <div className="introtext">
-          <h1>Plan Your Visit</h1>
-          <h3>Get Ready for the Fun!</h3>
+        <div className="ticketsintrotext">
+          <h1 className="ticketsintroheader">Plan Your Visit</h1>
+          <h3 className="ticketsintroslogan">Get Ready for the Fun!</h3>
         </div>
         <img
           src="../../assets/planbackground.jpg"
@@ -137,10 +135,11 @@ const Tickets = () => {
         </div>
         <section className="openinghours">
           <div className="timeheader">
-        <IconContext.Provider value={{ className: "timelogo" }}>
-          <IoIosTimer />
-        </IconContext.Provider>
-          <h2>Opening Hours</h2></div>
+            <IconContext.Provider value={{ className: "timelogo" }}>
+              <IoIosTimer />
+            </IconContext.Provider>
+            <h2>Opening Hours</h2>
+          </div>
           <div className="openinghours_infowrapper">
             <div className="openinghours_info">
               <h3>Summer Season Hours (May 1st - August 31st):</h3>

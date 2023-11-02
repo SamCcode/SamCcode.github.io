@@ -1,18 +1,19 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import "./PricingStyles.css"; // Make sure to create the appropriate CSS file
+import "./PricingStyles.css";
 import { IconContext } from "react-icons/lib";
 
 const Pricing = (props) => {
   return (
     <section className={props.className}>
       <div className="ticket-headerwrapper">
-      <h2>Pricing and Ticket Options</h2>
-      <a onClick={() => props.onClick("pricing")}>
-        <IconContext.Provider value={{ className: "closinglogo" }}>
-          <AiOutlineClose />
-        </IconContext.Provider>
-      </a></div>
+        <h2>Pricing and Ticket Options</h2>
+        <div onClick={() => props.onClick("pricing")}>
+          <IconContext.Provider value={{ className: "closinglogo" }}>
+            <AiOutlineClose />
+          </IconContext.Provider>
+        </div>
+      </div>
       <div className="ticket-optionwrapper">
         <div className="ticket-option">
           <h3>Admission Tickets</h3>
@@ -92,7 +93,9 @@ const Pricing = (props) => {
       </div>
       <div className="plan-btnwrapper">
         <button className="plan-btn">Book Now</button>
-        <button className="plan-btn" onClick={() => props.onClick("pricing")}>Go Back</button>
+        <button className="plan-btn" onClick={() => props.onClick("pricing")}>
+          Go Back
+        </button>
       </div>
     </section>
   );

@@ -7,30 +7,18 @@ function SpinningWheel(props) {
   const spinningAnimation = useRef(null);
   const [displayText, setDisplayText] = useState("Spin to win!");
 
-
   useEffect(() => {
-    if (props.startSpin)
-    {
+    if (props.startSpin) {
       anime({
         targets: ".wheelwrapper",
-        translateX: "-200%",
+        translateX: "278%",
+        rotate: "1turn",
         scale: "1",
         direction: "normal",
         easing: "linear",
-        duration: 0,
-        complete: function (anim) {
-          anime({
-            targets: ".wheelwrapper",
-            translateX: "-50%",
-            rotate: "1turn",
-            scale: "1",
-            direction: "normal",
-            easing: "linear",
-            opacity: "1",
-            duration: 2000,
-            delay: 0,
-          });
-        },
+        opacity: "1",
+        duration: 2000,
+        delay: 0,
       });
     }
   }, [props.startSpin]);
@@ -72,8 +60,9 @@ function SpinningWheel(props) {
 
         const spinningText = document.querySelector(".spinning-text");
         spinningText.style.position = "absolute";
-        spinningText.style.top = "35%";
-        spinningText.style.left = "28%";
+        spinningText.style.top = "25%";
+        spinningText.style.left = "33%";
+        spinningText.style.color = "black";
 
         setTimeout(() => {
           anime({

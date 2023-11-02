@@ -15,17 +15,30 @@ const Home = () => {
   };
 
   function handleClick(url) {
-    navigate(url)
+    navigate(url);
   }
-  
 
   useEffect(() => {
     anime.timeline({ loop: false }).add({
       targets: ".actioncard__container",
       opacity: 1,
-      easing: "easeInOutExpo",
-      duration: 6000,
-      delay: 5000,
+      easing: "easeInQuad",
+      duration: 4000,
+      delay: 6000,
+    });
+    anime.timeline({ loop: false }).add({
+      targets: ".introheader",
+      opacity: 1,
+      easing: "linear",
+      duration: 7000,
+      delay: 1000,
+    });
+    anime.timeline({ loop: false }).add({
+      targets: ".introslogan",
+      opacity: 1,
+      easing: "linear",
+      duration: 500,
+      delay: 11000,
     });
   }, []);
   return (
@@ -34,8 +47,9 @@ const Home = () => {
       <div className="video">
         <main>
           <div className="introtext">
-          <h1>Welcome to AdventureWorld!</h1>
-          <h3>Where the Fun Never Ends</h3></div>
+            <h1 className="introheader">Welcome to AdventureWorld!</h1>
+            <h3 className="introslogan">Where the Fun Never Ends!</h3>
+          </div>
           <video autoPlay muted id="video-bg">
             <source src="assets/background-video.mp4" type="video/mp4" />
           </video>
@@ -47,8 +61,9 @@ const Home = () => {
             text="Have a look at our rides!"
             img="assets/plan-visit.jpg"
             button="Read more!"
-            onClick={() =>{handleClick("/rides")}
-            }
+            onClick={() => {
+              handleClick("/rides");
+            }}
           />
           <Card
             header="Spin To Win"
@@ -65,8 +80,9 @@ const Home = () => {
             text="Reserve tickets!"
             img="assets/tickets.jpg"
             button="Read more!"
-            onClick={() =>{handleClick("/tickets")}
-            }
+            onClick={() => {
+              handleClick("/tickets");
+            }}
           />
         </section>
         <section className="about">

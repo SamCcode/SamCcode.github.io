@@ -33,23 +33,10 @@
 .introtext {
   z-index: 999;
   position: absolute;
-  top: 7rem;
+  top: 9rem;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-}
-
-.introtext h1 {
-  font-size: 3.75rem;
-  margin-bottom: 0;
-  color:  black;
-}
-.introtext h3 {
-font-size: 3rem;
-margin-top: 0;
-font-family: "Edu NSW ACT Foundation", cursive;
-font-weight: lighter;
-color:  black;
 }
 
 .about {
@@ -69,7 +56,23 @@ color:  black;
   font-size: 1.2rem;
 }
 
-.cardcontainer{
+.cardcontainer {
   display: flex;
   justify-content: center;
+}
+
+.introheader {
+  opacity: 0;
+  font-size: 3.75rem;
+  margin-bottom: 0;
+}
+
+.introslogan {
+  opacity: 0;
+  font-size: 3rem;
+  margin-top: 0;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-weight: lighter;
+  color: #ffd700;
+  text-shadow: 1px 1px 0px black;
 }

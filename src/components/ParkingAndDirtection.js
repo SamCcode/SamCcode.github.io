@@ -8,11 +8,11 @@ const ParkingAndDirection = (props) => {
     <div className="parking-directions">
       <div className="parkingheader">
         <h2>Parking and Directions</h2>
-        <a onClick={() => props.onClick("parking")}>
+        <div onClick={() => props.onClick("parking")}>
           <IconContext.Provider value={{ className: "closinglogo" }}>
             <AiOutlineClose />
           </IconContext.Provider>
-        </a>
+        </div>
       </div>
       <div className="parking-info">
         <h3>Parking Information</h3>

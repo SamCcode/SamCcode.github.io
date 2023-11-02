@@ -1,5 +1,3 @@
-
-
 import { ridesMenu } from "../database/RidesData";
 import "./RidesStyles.css";
 import Card from "../components/Card";
@@ -44,9 +42,9 @@ const Rides = () => {
     <div>
       <Navbar />
       <section>
-        <div className="introtext">
-          <h1>Have a look at our rides!</h1>
-          <h3>Do you dare to try them all?</h3>
+        <div className="ridesintrotext">
+          <h1 className="ridesintroheader">Have a look at our rides!</h1>
+          <h3 className="ridesintroslogan">Do you dare to try them all?</h3>
         </div>
         <img
           src="../../assets/ridesbackground.jpg"

@@ -137,13 +137,5 @@ const ridesMenu = [
   },
 ];
 
-const categorizedRidesMenu = ridesMenu.reduce((categories, menuItem) => {
-  const { category } = menuItem;
-  if (!categories[category]) {
-    categories[category] = [];
-  }
-  categories[category].push(menuItem);
-  return categories;
-}, {});
 
-export {categorizedRidesMenu, ridesMenu}
+export { ridesMenu };

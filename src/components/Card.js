@@ -4,7 +4,6 @@ import anime from "animejs";
 
 const Card = (card) => {
   const [isExpanded, setIsExpanded] = useState(true);
-  // const [isExpandedTextVisible, setIsExpandedTextVisible] = useState(false);
   const cardRef = useRef(null);
 
   const handleExpand = () => {
@@ -12,9 +11,6 @@ const Card = (card) => {
 
     const cardElement = cardRef.current;
     if (isExpanded) {
-      // setTimeout(() => {
-      //   setIsExpandedTextVisible(true); // Set a state variable to control the visibility of expanded text
-      // }, 500);
       anime({
         targets: cardElement,
 

@@ -1,20 +1,23 @@
-import React from 'react';
+import React from "react";
 import "./RulesAndPoliciesStyles.css";
-import { IconContext } from 'react-icons/lib';
-import { AiOutlineClose } from 'react-icons/ai';
+import { IconContext } from "react-icons/lib";
+import { AiOutlineClose } from "react-icons/ai";
 
 const RulesAndPolicies = (props) => {
   return (
     <div className="rules-section">
-      <div className='rulesheader'>
-      <h2>Rules and Policies</h2>
-      <a onClick={() => props.onClick('rules')}>
-        <IconContext.Provider value={{ className: "closinglogo" }}>
-          <AiOutlineClose />
-        </IconContext.Provider>
-      </a></div>
+      <div className="rulesheader">
+        <h2>Rules and Policies</h2>
+        <div onClick={() => props.onClick("rules")}>
+          <IconContext.Provider value={{ className: "closinglogo" }}>
+            <AiOutlineClose />
+          </IconContext.Provider>
+        </div>
+      </div>
       <p>
-        At AdvetureWorld, we want to ensure that all our visitors have a safe and enjoyable experience. Please take a moment to review our park rules and policies.
+        At AdvetureWorld, we want to ensure that all our visitors have a safe
+        and enjoyable experience. Please take a moment to review our park rules
+        and policies.
       </p>
       <h3>General Rules:</h3>
       <ul>
@@ -28,7 +31,9 @@ const RulesAndPolicies = (props) => {
       <ul>
         <li>Observe height and age restrictions for rides.</li>
         <li>Secure all loose articles before boarding a ride.</li>
-        <li>Stay seated and keep hands and arms inside ride vehicles at all times.</li>
+        <li>
+          Stay seated and keep hands and arms inside ride vehicles at all times.
+        </li>
         <li>Obey ride operator instructions.</li>
       </ul>
 
@@ -41,17 +46,24 @@ const RulesAndPolicies = (props) => {
 
       <h3>Park Closure and Events:</h3>
       <p>
-        AdventureWorld may close due to inclement weather or special events. Check our website or contact guest services for the most up-to-date information.
+        AdventureWorld may close due to inclement weather or special events.
+        Check our website or contact guest services for the most up-to-date
+        information.
       </p>
 
       <h3>Lost and Found:</h3>
       <p>
-        If you lose an item, please visit our Lost and Found located near the park entrance.
+        If you lose an item, please visit our Lost and Found located near the
+        park entrance.
       </p>
 
       <p>
-        Thank you for visiting AdventureWorld. We hope you have a fantastic time while following our rules and policies.
+        Thank you for visiting AdventureWorld. We hope you have a fantastic time
+        while following our rules and policies.
       </p>
+      <button className="plan-btn" onClick={() => props.onClick("rules")}>
+        Go Back
+      </button>
     </div>
   );
 };

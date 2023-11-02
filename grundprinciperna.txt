@@ -1,0 +1,12 @@
+Animationens grundprinciper!
+
+Med "introt" på förstasidan så har jag försökt skapa en förväntan då man ser rörlig film och sakerna "växer" fram. samma med hjulet som snurrar in i bild.
+Samma med "staging" av korten som kommer fram, dom "highlightas" med hjälp av placering osv. 
+Jag har jobbat mycket med timingen för dee olika animationerna för att det inte ska bli tråkigt men samtidigt kännas riktigt.
+Jag har använt mig mycket av ease-in och ease-out i animationerna, för att få dom att köras "smooth".
+i hjulet som snurrar har jag försökt att få till en verklig snurr som startar och saktar in likt ett riktigt hjul. 
+
+Sen så har jag väl egentligen mest utgått efter vad jag själv tycker ser ut och känns bra och kanske inte har utgått från grundprinciperna utan mer lagt till dom i efterhand där det har behgövts 
+
+
+

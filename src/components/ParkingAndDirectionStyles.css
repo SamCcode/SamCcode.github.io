@@ -1,0 +1,23 @@
+.parking-directions {
+  width: 100vw;
+  height: 60rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  top: 45%;
+  left:-110%;
+  overflow: hidden;
+}
+
+.parkingheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+

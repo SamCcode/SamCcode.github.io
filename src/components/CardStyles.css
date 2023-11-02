@@ -1,0 +1,103 @@
+.card {
+  width: 18rem;
+  height: 23rem;
+  border-radius: 3px;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: all 0.5s ease;
+  z-index: 2;
+  background-color: #f4f4f4;
+  margin: 2rem;
+}
+
+.card__styletwo {
+  cursor: pointer;
+}
+
+.card__styletwo:hover {
+  transform: translate3D(0, -1px, 0) scale(1.03);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 18px 32px -10px,
+    rgba(0, 0, 0, 0.3) 5px 12px 21px -13px;
+  transition: all 0.4s ease;
+}
+
+.card__stylethree {
+  width: 14rem;
+  height: 18rem;
+}
+
+
+.card-image {
+  border-radius: 3px 3px 0 0;
+  object-fit: cover;
+  width: 18rem;
+  height: 12rem;
+}
+
+.card__stylethree .card-image {
+  border-radius: 3px 3px 0 0;
+  object-fit: cover;
+  width: 14rem;
+  height: 9rem;
+} 
+
+.card-header {
+  margin-bottom: 0rem;
+}
+
+.card-text {
+  margin: 1rem;
+  margin-top: 0, 5rem;
+  transition: opacity 1.5s ease-out;
+  transition-delay: 0.5s;
+}
+
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.cardcontainer {
+  position: relative;
+}
+
+
+.button {
+
+ 
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 0 15px;
+  border-radius: 4px;
+  color: #6200ee;
+  background: transparent;
+  line-height: 1.15;
+  font-size: 14px;
+  height: 36px;
+  word-spacing: 0px;
+  letter-spacing: .0892857143em;
+  text-decoration: none;
+  text-transform: uppercase;
+  min-width: 64px;
+  border: 1px solid #6200ee;
+  text-align: center;
+  transition: 1s;
+}
+
+.button:hover {
+  color: #f4f4f4;
+  background: #6200ee;
+}
+
+
+.nobutton {
+  display: none;
+}

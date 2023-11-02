@@ -1,0 +1,53 @@
+.pricing-section {
+  width: 100vw;
+  height: 60rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  top: 45%;
+  left:-110%;
+  overflow: hidden;
+}
+
+.ticket-optionwrapper {
+  /* background-color: #F5F5F5; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 2rem;
+}
+
+.ticket-option {
+  width: 13rem;
+  height: 11rem;
+  background-color: #e6e6fa;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.ticket-option ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ticket-option li {
+  margin: 0.6rem;
+}
+
+.closinglogo {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.ticket-headerwrapper {
+  display: flex;
+  align-items: center;
+}

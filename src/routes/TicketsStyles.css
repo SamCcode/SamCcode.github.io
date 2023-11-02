@@ -1,0 +1,87 @@
+.ticketbackground-img {
+    width: 100vw;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+.openinghours {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.openinghours_infowrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+.openinghours_info {
+   
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid black;
+}
+
+.openinghours_infotext {
+    margin-bottom: 8rem;
+}
+
+.plan-btn  {
+
+        margin: 2rem;
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+        font-weight: 500;
+        border-radius: 3px;
+        padding: 0 15px;
+        border-radius: 4px;
+        color: #E6E6FA;
+        background: #6200ee;
+        line-height: 1.15;
+        font-size: 14px;
+        height: 36px;
+        word-spacing: 0px;
+        letter-spacing: .0892857143em;
+        text-decoration: none;
+        text-transform: uppercase;
+        min-width: 8rem;
+        border: 1px solid #6200ee;
+        text-align: center;
+        transition: 1s;
+      }
+      
+      .plan-btn:hover {
+        color: #6200ee;
+        background: #E6E6FA;
+      }
+
+      .plan-btnwrapper{
+        display: flex;
+        justify-content: space-around;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .timelogo{
+        font-size: 5rem;
+      }
+
+      .timeheader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
